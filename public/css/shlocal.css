@@ -1,0 +1,106 @@
+@import url(fonts.css);
+@import url(bootstrap.min.css);
+
+html {
+  font-family: 'Nunito', sans-serif;
+}
+
+body,html {
+  height: 100%;
+}
+
+.navbar {
+	padding:0;
+}
+
+main {
+	margin-top: 1rem;
+}
+
+footer {
+	/* height: 30px; */
+}
+
+.btn-xl {
+    padding: 0.25rem 4rem;
+    font-size: 2.5rem;
+    line-height: 2;
+    border-radius: .3rem;
+}
+
+.bg-green {
+    background-image: url('/img/menu_bg-green.png');
+}
+
+.bg-blue {
+    background-image: url('/img/menu_bg.png');
+}
+
+/*
+bootstrap-slider
+*/
+.slider.slider-horizontal {
+    width:100% !important;
+    /* margin-bottom: 4.5rem !important; */
+	z-index:6;
+}
+
+.slider-handle {
+    top: -10px !important;
+    width: 40px !important;
+    height: 40px !important;
+}
+
+.slider-track {
+    height:12px !important;
+}
+
+.slider-icon-before {
+    font-size: 5rem;
+    color: #66C6EA;
+    font-weight: 600;
+    vertical-align: sub;
+}
+
+.slider-label-before {
+    font-size: 3rem;
+    color: #66C6EA;
+    font-weight: 600;
+    vertical-align: sub;
+}
+
+/*
+switch
+*/
+.switch.switch-lg input + label::before {
+    width: calc(calc(5rem * .8) * 2) !important;
+}
+
+.switch.switch-lg input:checked + label::after {
+    margin-left: calc(5rem * .8) !important;
+}
+.switch.switch-lg input + label::after {
+    width: calc(calc(5rem * .8) - calc(2px * 2)) !important;
+    height: calc(calc(5rem * .8) - calc(2px * 2)) !important;
+}
+
+.switch.switch-lg input + label {
+    min-width: calc(calc(5rem * .8) * 2) !important;
+    height: calc(5rem * .8) !important;
+    line-height: calc(5rem * .8) !important;
+    text-indent: calc(calc(calc(5rem * .8) * 2) + .5rem) !important;
+}
+
+
+.custom-control-label::before {
+    position: absolute;
+    top: 0.5rem;
+    left: -3rem;
+    display: block;
+    width: 2rem;
+    height: 2rem;
+}
+
+.custom-control-input {
+    position: inherit;
+}
